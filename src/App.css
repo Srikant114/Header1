@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.headerContainer{
+  height: 489px;
+  background-color: cyan;
+}
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height:67px;
+  padding: 0 30px;
+}
+.headerCenter .tabs{
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 10px;
+  list-style: none;
+}
+.headerCenter .tabs li{
+  padding: 0 30px;
+}
+.activeTab{
+  position: relative;
+}
+.activeTab::before{
+  content: "";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    bottom: -4px;
+    border-bottom: 2px solid #cbc0a3;
+}
+.headerRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.searchBar{
+  width: 95px;
+  height: 22px;
+  font-size: small;
+  border: 2px solid #cbc0a3;
+  background-color: rgba(0,0,0,0);
+}
+.searchBar::placeholder{
+  font-size: 0.5rem;
+  text-align: center;
+}
+.headerRighttext{
+  font-size: 10px;
+}
+.searchContainer{
+  display: flex;
+  gap: 5px;
+}
+.iconSearch{
+  border: 1px solid #cbc0a3;
+  width: 28px;
+  height: 22px;
+  background-color: #cbc0a3;
+}
+.headText{
+  width: 364px;
+  height: 120px;
+  margin: 123px auto;
+  text-align: center;
+}
+.headText h2{
+  font-size: 27px;
+}
+.headText .detail{
+  margin-top: 20px;
+  height:27px;
+  font-size: 10px;
+}
+.textBox{
+  margin-left: 30px;
+  font-size: 12px;
+}
+
